@@ -20,10 +20,9 @@ const port = process.env.PORT || 8080;
 app.get('/', (req, res) => {
     rrAnalytics(req);
     res.redirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-
 });
 app.get('/stats', (req, res) => {
-    res.sendFile(__dirname + "/www/index.html");
+    res.sendFile(__dirname + "/www/stats.html");
 });
 
 
